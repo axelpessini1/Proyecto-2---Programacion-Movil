@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', new function () {
+    const Grid = document.querySelector(".grid");
 
-    const clote1 = new Target("Camisa de Algodón", "Camisa de algodón suave y cómoda, perfecta para el uso diario.", "img/1.jpg", 29.99);
-    document.querySelector('.grid').appendChild(clote1.createCard());
-
-    const clothes = [
+    const targets = [
+        new Target("Hola", "asdasd", "img/1.jpg", 12),
+        new Target("Hola", "asdasd", "img/1.jpg", 12),
+        new Target("Hola", "asdasd", "img/1.jpg", 12)
     ];
 
-    clothes.forEach(clothe => {
-        document.querySelector('.grid').appendChild(clothe.createCard());
-    });
-
+    targets.forEach(targets => {
+        Grid.appendChild(targets.createCard());
+    })
 });
