@@ -10,14 +10,19 @@ class Target {
     createCard() {
         const contenedor = document.createElement('div');
         contenedor.className = 'producto';
+        const productoUrl = `pages/producto.html?title=${encodeURIComponent(this.title)}&description=${encodeURIComponent(this.description)}&image=${encodeURIComponent(this.image)}&precio=${encodeURIComponent(this.precio)}`;
         contenedor.innerHTML = `
-            <a href="pages/producto.html">
+            <a href="${productoUrl}">
                 <img class="producto__imagen" src="${this.image}" alt="${this.title}">
                 <div class="producto__informacion">
                     <p class="producto__nombre">${this.title}</p>
                     <p>${this.description}</p>
                     <p class="producto__precio">$${this.precio}</p>
                 </div>
+            </a>
+            
+            <a class="producto__comprar" href="${productoUrl}">
+                Comprar
             </a>
         `;
         return contenedor;

@@ -6,9 +6,15 @@
     <title>producto</title>
     <link rel="stylesheet" href="../css/normalize.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/producto.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet">
+    <script src="../js/producto.js" defer></script>
 </head>
 <body>
     <header class="header">
@@ -25,13 +31,13 @@
     <main class="contenedor">
         <div class="producto-detalle">
             <div class="camisa">
-                <img class="camisa__imagen" src="../img/3.jpg" alt="Camiseta ReactJS">
+                <img id="producto-imagen" class="camisa__imagen" src="../img/3.jpg" alt="">
             </div>
             <div class="producto-detalle__contenido">
                 <span class="producto-detalle__etiqueta">Coleccion Front End</span>
-                <h1>ReactJS</h1>
-                <p class="producto-detalle__precio">$25</p>
-                <p>Camiseta comoda y ligera para llevar tu tecnologia favorita todos los dias.</p>
+                <h1 id="producto-titulo">ReactJS</h1>
+                <p id="producto-precio" class="producto-detalle__precio">$25</p>
+                <p id="producto-descripcion">Camiseta comoda y ligera para llevar tu tecnologia favorita todos los dias.</p>
                 <label for="talla">Selecciona tu talla</label>
                 <select id="talla" name="talla">
                     <option>Selecciona una talla</option>
@@ -46,6 +52,5 @@
         
     </main>
 
-    
 </body>
 </html>

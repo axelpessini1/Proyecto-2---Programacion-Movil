@@ -1,0 +1,86 @@
+.camisa {
+	margin: 0 auto;
+	max-width: 42rem;
+}
+
+.camisa__imagen {
+	background: var(--superficie);
+	border-radius: .5rem;
+	padding: 1rem;
+	width: 100%;
+}
+
+.producto-detalle {
+	align-items: center;
+	display: grid;
+	gap: 3rem;
+	grid-template-columns: 1fr 1fr;
+}
+
+.producto-detalle__contenido {
+	background: var(--superficie);
+	border-left: 4px solid var(--amarillo);
+	border-radius: .5rem;
+	padding: 2rem;
+}
+
+.producto-detalle__contenido h1 {
+	margin-bottom: .25rem;
+	text-align: left;
+}
+
+.producto-detalle__etiqueta {
+	color: var(--azul);
+	display: inline-block;
+	font-size: .85rem;
+	font-weight: 700;
+	letter-spacing: .08em;
+	margin-bottom: .75rem;
+	text-transform: uppercase;
+}
+
+.producto-detalle__precio {
+	color: var(--azul);
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1rem;
+}
+
+.producto-detalle__contenido label {
+	display: block;
+	font-weight: 700;
+	margin-bottom: .4rem;
+}
+
+.producto-detalle__contenido select,
+.producto-detalle__contenido button {
+	border: 1px solid #ccd3da;
+	border-radius: .3rem;
+	padding: .8rem;
+	width: 100%;
+}
+
+.producto-detalle__contenido select:focus,
+.producto-detalle__contenido button:focus {
+	outline: 3px solid rgba(23, 105, 170, .25);
+	outline-offset: 2px;
+}
+
+.producto-detalle__contenido button {
+	background: var(--amarillo);
+	border-color: var(--amarillo);
+	cursor: pointer;
+	font-weight: 700;
+	margin-top: 1rem;
+	transition: background-color .2s ease;
+}
+
+.producto-detalle__contenido button:hover {
+	background: var(--amarillo-hover);
+}
+
+@media (max-width: 50rem) {
+	.producto-detalle {
+		grid-template-columns: 1fr;
+	}
+}

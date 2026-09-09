@@ -1,0 +1,64 @@
+:root {
+	--fondo: #f4f6f8;
+	--superficie: #ffffff;
+	--oscuro: #20242a;
+	--azul: #1769aa;
+	--azul-hover: #125486;
+	--amarillo: #f7c600;
+	--amarillo-hover: #d9ad00;
+	--borde: #e2e6ea;
+	--texto: #252a30;
+	--sombra: 0 .75rem 1.5rem rgba(32, 36, 42, .14);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	background: var(--fondo);
+	color: var(--texto);
+	font-family: 'Krub', sans-serif;
+	line-height: 1.6;
+	margin: 0;
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+a {
+	color: inherit;
+}
+
+h1,
+h2,
+h3,
+p {
+	margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+	color: var(--oscuro);
+	font-family: 'Staatliches', sans-serif;
+	font-weight: 400;
+	letter-spacing: .03em;
+}
+
+h1 {
+	font-size: clamp(2.4rem, 5vw, 4rem);
+	line-height: 1.1;
+	text-align: center;
+}
+
+button,
+select {
+	font: inherit;
+}
