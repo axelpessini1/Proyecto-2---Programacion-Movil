@@ -6,9 +6,12 @@
 	--azul-hover: #125486;
 	--amarillo: #f7c600;
 	--amarillo-hover: #d9ad00;
+    --morado: #4521559e;
+    --morado-hover: #9b59b6;
 	--borde: #e2e6ea;
 	--texto: #252a30;
 	--sombra: 0 .75rem 1.5rem rgba(32, 36, 42, .14);
+
 }
 
 * {

@@ -22,6 +22,9 @@ class Target {
             </a>
             
             <a class="producto__comprar" href="${productoUrl}">
+                <span class="material-symbols-outlined" style="display: inline-block; vertical-align: middle; margin-right: 0.2rem;">
+                    shopping_cart
+                </span>
                 Comprar
             </a>
         `;
