@@ -45,8 +45,13 @@ h1{
 }
 
 .footer {
-	background: var(--oscuro);
+	/* Flexbox centra el contenido y el borde superior separa visualmente el footer. */
+	align-items: center;
+	background: linear-gradient(135deg, var(--oscuro), #303840);
+	border-top: 3px solid var(--amarillo);
 	color: var(--superficie);
+	display: flex;
+	justify-content: center;
 	margin-top: 2rem;
 	padding: 1.5rem 1rem;
 	text-align: center;

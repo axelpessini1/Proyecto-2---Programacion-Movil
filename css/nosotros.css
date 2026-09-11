@@ -1,15 +1,21 @@
 .nosotros {
+    /* Dos columnas permiten ubicar la imagen primero y el texto despues en escritorio. */
     align-items: center;
     display: grid;
     gap: 2rem;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .nosotros__imagen {
     border-radius: .5rem;
-    width: 100%;
+    grid-column: 1;
     grid-row: 1 / 2;
-    /*Esto es nuevo, da vuelta el grid- (cambia de posicion)*/
+    width: 100%;
+}
+
+.nosotros__contenido {
+    grid-column: 2;
+    grid-row: 1;
 
 }
 
@@ -18,6 +24,7 @@
 }
 
 .bloques {
+    /* Grid distribuye las ventajas en columnas iguales y mantiene separacion uniforme. */
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(4, 1fr);
@@ -27,6 +34,7 @@
     background: #4f4747;
     border-radius: .5rem;
     color: var(--superficie);
+    /* Flexbox apila el icono, el titulo y el texto dentro de cada bloque. */
     display: flex;
     flex-direction: column;
     padding: 1.5rem 1rem;
@@ -57,13 +65,26 @@
 
 @media (max-width: 50rem) {
 
-    .nosotros,
     .bloques {
         grid-template-columns: repeat(2, 1fr);
     }
 
     .nosotros {
+        /* En pantallas pequenas se usa una sola columna para evitar contenido comprimido. */
         grid-template-columns: 1fr;
+    }
+
+    .nosotros__imagen,
+    .nosotros__contenido {
+        grid-column: 1;
+    }
+
+    .nosotros__imagen {
+        grid-row: 1;
+    }
+
+    .nosotros__contenido {
+        grid-row: 2;
     }
 }
 
